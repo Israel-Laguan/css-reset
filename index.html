@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>testing CSS RESET</title>
+    <link rel="stylesheet" href="none" id="reset">
   </head>
   <body>
     <button
@@ -16,6 +17,7 @@
     >
       None (Browser Styles Only)
     </button>
+    ↔️
     <button
       type="button"
       onclick="switch_style('reset.css');return false;"
@@ -34,6 +36,7 @@
             provide visual feedback whilst building CSS systems and frameworks.
           </p>
         </header>
+        <p>(The next set of links lead to each section.)</p>
         <nav role="navigation">
           <ul>
             <li>
@@ -657,13 +660,8 @@ P R E F O R M A T T E D T E X T
     <script>
       function switch_style(css_source) {
         var head = document.head;
-        var link = document.createElement("link");
-console.log(css_source)
-        link.type = "text/css";
-        link.rel = "stylesheet";
+        var link = document.getElementById("reset");
         link.href = css_source;
-
-        head.appendChild(link);
       }
     </script>
   </body>
