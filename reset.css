@@ -94,9 +94,9 @@ a {
 }
 
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -108,7 +108,6 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace;
-  font-size: 1rem;
 }
 
 small {
@@ -169,25 +168,30 @@ input {
 input {
   background-color: transparent;
   color: inherit;
-  border-width: 1;
   padding: 0;
-  border: 1px solid transparent;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #fff, 0 1px 0 #fff;
+  margin: 1px;
+  border: 1px solid grey;
 }
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
   cursor: pointer;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.39);
+  border: 1px solid grey;
 }
 input:disabled {
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39);
+  border: 1px solid grey;
   cursor: not-allowed;
 }
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
   margin: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 
 button,
@@ -199,7 +203,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  border: 1px solid grey;
 }
 
 button::-moz-focus-inner,
