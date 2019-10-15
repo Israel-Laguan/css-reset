@@ -180,18 +180,18 @@ input {
   color: inherit;
   padding: 0;
   margin: 1px;
-  border: 1px solid grey;
+  border: 1px solid gray;
 }
 
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
   cursor: pointer;
-  border: 1px solid grey;
+  border: 1px solid gray;
 }
 
 input:disabled {
-  border: 1px solid grey;
+  border: 1px solid gray;
   cursor: not-allowed;
 }
 
